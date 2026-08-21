@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Application Tracker</title>
+
+    <!-- Browser Tab Icon / Favicon -->
+    <link
+        rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%222563eb%22/><text x=%2250%22 y=%2270%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22white%22>J</text></svg>"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div>
+            <h1>Job Application Tracker</h1>
+
+            <p>Track and manage your job applications</p>
+        </div>
+
+    </header>
+
+
+    <!-- Dashboard -->
+
+    <section class="dashboard">
+
+        <div class="card">
+
+            <div class="card-icon">📋</div>
+
+            <h2>Total Applications</h2>
+
+            <p id="totalApplications">0</p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">📤</div>
+
+            <h2>Applied</h2>
+
+            <p id="appliedApplications">0</p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">💬</div>
+
+            <h2>Interview</h2>
+
+            <p id="interviewApplications">0</p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">🎯</div>
+
+            <h2>Selected</h2>
+
+            <p id="selectedApplications">0</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Job Application Form -->
+
+    <section class="job-form">
+
+        <h2>Add New Job Application</h2>
+
+        <p class="form-description">
+            Enter the details of the job you have applied for.
+        </p>
+
+
+        <form id="jobForm">
+
+            <!-- Company -->
+
+            <label for="company">Company Name</label>
+
+            <input
+                type="text"
+                id="company"
+                placeholder="Enter company name"
+            >
+
+
+            <!-- Job Title -->
+
+            <label for="jobTitle">Job Title</label>
+
+            <input
+                type="text"
+                id="jobTitle"
+                placeholder="Enter job title"
+            >
+
+
+            <!-- Location -->
+
+            <label for="location">Location</label>
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Enter location"
+            >
+
+
+            <!-- Applied Date -->
+
+            <label for="date">Applied Date</label>
+
+            <input
+                type="date"
+                id="date"
+            >
+
+
+            <!-- Status -->
+
+            <label for="status">Status</label>
+
+            <select id="status">
+
+                <option value="">
+                    Select Status
+                </option>
+
+                <option value="Applied">
+                    Applied
+                </option>
+
+                <option value="Interview">
+                    Interview
+                </option>
+
+                <option value="Selected">
+                    Selected
+                </option>
+
+                <option value="Rejected">
+                    Rejected
+                </option>
+
+            </select>
+
+
+            <!-- Submit -->
+
+            <button type="submit">
+                Add Application
+            </button>
+
+        </form>
+
+
+        <!-- Message -->
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6f8;
+
+    color: #222;
+
+    padding: 40px;
+}
+
+
+/* Header */
+
+.header {
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #666;
+
+    font-size: 18px;
+}
+
+
+/* Dashboard */
+
+.dashboard {
+    max-width: 1100px;
+
+    margin: 30px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Cards */
+
+.card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+/* Card Icon */
+
+.card-icon {
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Card Heading */
+
+.card h2 {
+    font-size: 17px;
+
+    margin-bottom: 12px;
+
+    color: #444;
+}
+
+
+/* Card Number */
+
+.card p {
+    font-size: 32px;
+
+    font-weight: bold;
+
+    line-height: 1;
+}
+
+
+/* Card Hover */
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Job Form */
+
+.job-form {
+    max-width: 1100px;
+
+    margin: 30px auto 0;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Form Heading */
+
+.job-form h2 {
+    margin-bottom: 8px;
+
+    font-size: 24px;
+}
+
+
+/* Form Description */
+
+.form-description {
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+/* Form */
+
+.job-form form {
+    display: grid;
+
+    gap: 10px;
+}
+
+
+/* Labels */
+
+.job-form label {
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+
+/* Inputs and Select */
+
+.job-form input,
+.job-form select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    background-color: white;
+
+    transition: 0.3s;
+}
+
+
+/* Input Hover */
+
+.job-form input:hover,
+.job-form select:hover {
+    border-color: #999;
+}
+
+
+/* Input Focus */
+
+.job-form input:focus,
+.job-form select:focus {
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+
+/* Button */
+
+.job-form button {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+
+/* Button Hover */
+
+.job-form button:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+/* Message */
+
+#message {
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    min-height: 20px;
+}
+
+
+/* Success */
+
+#message.success {
+    color: #15803d;
+}
+
+
+/* Error */
+
+#message.error {
+    color: #dc2626;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    body {
+        padding: 30px;
+    }
+
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .job-form {
+        padding: 20px;
+    }
+}
